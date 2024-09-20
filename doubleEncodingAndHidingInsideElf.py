@@ -71,4 +71,4 @@ def main():
     output_path = input("Enter the path of the output file: ")
     hide_inside_elf(cover_file_path, output_path)
     
-
+main()
