@@ -4,6 +4,7 @@ import os
 global base64txt
 
 def encode_file_with_hex_and_base64(input_path):
+    global base64txt
     # Read the original file
     with open(input_path, 'r') as file:
         content = file.read()
@@ -16,6 +17,7 @@ def encode_file_with_hex_and_base64(input_path):
     base64txt = base64.b64encode(hex_encoded_content.encode('utf-8')).decode('utf-8')
 
 def hide_inside_elf(input_path, output_path):
+    global base64txt
     # File names
     file_c = base64txt
 
